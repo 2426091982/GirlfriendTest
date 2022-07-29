@@ -21,7 +21,7 @@ export default function ErrorRadios(props) {
         setHelperText(' ');
         setError(false);
     };
-    
+
     // 点击查看答案
     const handleSubmit = (event) => {
         let trueAnswer = item.options[item.answer];
@@ -61,7 +61,7 @@ export default function ErrorRadios(props) {
                 </RadioGroup>
                 {/* 提示文字 */}
                 <FormHelperText sx={{ color: '#1976d2', fontWeight: 700 }}>{helperText}</FormHelperText>
-                <Button sx={{ mt: 1, mr: 1 }} type="submit" variant="outlined">
+                <Button sx={{ mt: 1, mr: 1, width: '150px' }} type="submit" variant="outlined">
                     查看答案
                 </Button>
             </FormControl>
